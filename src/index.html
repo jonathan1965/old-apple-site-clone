@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Apple web</title>
 </head>
+
 <body>
-    <h1>Apple</h1>
+    <div class="container">
+        <header>
+            <nav class="nav-list">
+                <ul>
+                    <li>
+                        <img class="apple-icon" alt="icon" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggc3R5bGU9ImZpbGw6I0Q2RDZEODsiIGQ9Ik0zMzIuMjQyLDgxLjEyN2MxNi4zMDgtMTkuNzExLDI3Ljc2OS00Ni40ODIsMjcuMTk0LTczLjc1Yy0wLjA5Ny00LjU3OS00LjI3NC03Ljk3OS04LjgwMi03LjI4OA0KCWMtMjMuOTI3LDMuNjU2LTUwLjY3NCwxOC42NDEtNjcuMjMsMzguMDI0Yy0xNS4yNTksMTcuNjQzLTI4LjgwMSw0NS4wNjEtMjcuNzgzLDcyLjIzYzAuMTUzLDQuMDk0LDMuNjEyLDcuMzU3LDcuNzA3LDcuMjQxDQoJQzI4OS43MzcsMTE2LjgzNywzMTUuODEsMTAxLjAyMywzMzIuMjQyLDgxLjEyNyIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0MyQzJDNDsiIGQ9Ik0yNzYuMjI3LDExMC4zNDNjLTEuNTc5LTQyLjEyMSwzMC4yLTkxLjMxOSw4MS43ODItMTA3LjE4Yy0xLjYxOS0yLjIyNi00LjQxOC0zLjUyNS03LjM3NC0zLjA3NA0KCWMtMjMuOTI3LDMuNjU2LTUwLjY3NCwxOC42NDEtNjcuMjMsMzguMDI0Yy0xNS4yNTksMTcuNjQzLTI4LjgwMiw0NS4wNjItMjcuNzgzLDcyLjIzYzAuMTUzLDQuMDk0LDMuNjEyLDcuMzU3LDcuNzA3LDcuMjQxDQoJYzUuMTIxLTAuMTQ1LDEwLjIyOC0wLjg2MiwxNS4yNTUtMi4wNkMyNzcuMTk5LDExNC4yMTIsMjc2LjMwMywxMTIuMzgxLDI3Ni4yMjcsMTEwLjM0M3oiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNENkQ2RDg7IiBkPSJNNDU5LjcwNCwzNzIuNzA0Yy0xNi41NzktOC4zNDctNjIuMzMzLTM3LjE1Mi02Mi44OTktMTAxLjAzNA0KCWMtMC40ODQtNTIuMjkzLDM0LjIxNi04Mi43LDQ4Ljk3Ny05My4zMTdjMy41MDQtMi41MjEsNC4yNzQtNy40NTQsMS42MS0xMC44NTFjLTEyLjI2NS0xNS42MzUtMjYuNjA2LTI1LjY2NC00MC4zODItMzIuMTY1DQoJYzAuMDA4LTAuMDAxLDAuMDE4LTAuMDAzLDAuMDI2LTAuMDA0Yy0xLjc4NC0wLjg0My00LjgzOS0yLjE4MS03LjI4NC0zLjE0NGwwLDBjLTY5LjMyLTI3LjI4Ny0xMTMuMDA2LDE0LjUzOC0xMzkuNDY5LDE0LjUzOA0KCWMtMjAuMjYxLDAtNTEuNTI2LTIyLjg5My04NC42NTItMjIuMjY4Yy00My41MjksMC42MzItODMuNjIzLDI1LjMyMi0xMDYuMDcsNjQuMjgyYy0zNC40MzgsNTkuNzc0LTIzLjA4MSwxNDEuNDg2LDMuNzUsMjA1LjE2OA0KCWMwLDAuMDAxLTAuMDAxLDAuMDAxLTAuMDAxLDAuMDAyYzAuNjg3LDEuNjI5LDEuNzgxLDQuMTY0LDIuNjkzLDYuMjExYzAuMDAxLTAuMDAyLDAuMDAxLTAuMDAzLDAuMDAyLTAuMDA1DQoJYzcuNzczLDE3LjQ1NiwxNi42NzIsMzMuNDA4LDI2LjA0Nyw0Ni45NjhjMjEuNTI3LDMxLjExNSw0Ny4yMDgsNjYuMTY3LDgwLjk1MSw2NC44NzljMzIuNDc3LTEuMjg4LDQ0Ljc1NS0yMC45OTgsODQuMDAzLTIwLjk5OA0KCWMzOS4yMjMsMCw1MC4yODcsMjAuOTk4LDg0LjYyNywyMC4zNzNjMzQuOTU3LTAuNjYzLDU3LjA5My0zMS43NTMsNzguNDczLTYzLjAxNmMxOC44MTctMjcuNDcsMjkuMTk4LTU0LjI4MiwzMy4zNTgtNjYuMzUzDQoJQzQ2NC43MDQsMzc4LjM3Miw0NjMuMTA1LDM3NC40MTYsNDU5LjcwNCwzNzIuNzA0eiIvPg0KPHBhdGggc3R5bGU9ImZpbGw6I0MyQzJDNDsiIGQ9Ik0xMjIuNjU3LDQ0Ny4wODZjLTkuMzc1LTEzLjU2LTE4LjI3NC0yOS41MTItMjYuMDQ3LTQ2Ljk2OGMtMC4wMDEsMC4wMDEtMC4wMDEsMC4wMDMtMC4wMDIsMC4wMDUNCgljLTAuOTExLTIuMDQ2LTEuOTk2LTQuNTYtMi42OTMtNi4yMTFjMCwwLDAuMDAxLTAuMDAxLDAuMDAxLTAuMDAyYy0yNi42NjYtNjMuMjg4LTM4LjMxMS0xNDUuMTgzLTMuNzUtMjA1LjE2OA0KCWMyMC43MzEtMzUuOTgsNTYuNTE1LTU5Ljc3Myw5Ni4xNTQtNjMuNzAyYy0zLjUzNC0wLjQyNS03LjA5OS0wLjY0Ny0xMC42ODgtMC41OGMtNDMuNTI5LDAuNjMyLTgzLjYyMywyNS4zMjItMTA2LjA3LDY0LjI4Mg0KCWMtMzQuNDM4LDU5Ljc3NC0yMy4wODEsMTQxLjQ4NiwzLjc1LDIwNS4xNjhjMCwwLjAwMS0wLjAwMSwwLjAwMi0wLjAwMSwwLjAwMmMwLjY4NywxLjYyOSwxLjc4MSw0LjE2NCwyLjY5Myw2LjIxMQ0KCWMwLjAwMS0wLjAwMiwwLjAwMi0wLjAwMywwLjAwMi0wLjAwNWM3Ljc3MywxNy40NTYsMTYuNjcyLDMzLjQwOCwyNi4wNDYsNDYuOTY4YzIxLjUyNywzMS4xMTUsNDcuMjA4LDY2LjE2Nyw4MC45NTEsNjQuODc5DQoJYzMuMzItMC4xMzIsNi40Mi0wLjQ2NCw5LjM2OC0wLjk0QzE2NC4wNjMsNTA1LjI4NCwxNDEuNzI3LDQ3NC42NSwxMjIuNjU3LDQ0Ny4wODZ6Ii8+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                    </li>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="">Mac</a></li>
+                    <li><a href="">iPod</a></li>
+                    <li><a href="">iPhone</a></li>
+                    <li><a href="">iPad</a></li>
+                    <li><a href="">Itune</a></li>
+                    <li><a href="">Support</a></li>
+                    <li id="search-bar">
+                        <img alt="icon-search"
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjEyNC41MjRweCIgaGVpZ2h0PSIxMjQuNTI0cHgiIHZpZXdCb3g9IjAgMCAxMjQuNTI0IDEyNC41MjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEyNC41MjQgMTI0LjUyNDsiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPHBhdGggZD0iTTUxLDEwMi4wNWMxMC41LDAsMjAuMi0zLjIsMjguMy04LjZsMjkuMywyOS4zYzIuMzAxLDIuMyw2LjEwMSwyLjMsOC41LDBsNS43LTUuN2MyLjMtMi4zLDIuMy02LjEsMC04LjVMOTMuNCw3OS4zNQ0KCQljNS4zOTktOC4xLDguNi0xNy44LDguNi0yOC4zYzAtMjguMS0yMi45LTUxLTUxLTUxYy0yOC4xLDAtNTEsMjIuOS01MSw1MUMwLDc5LjE0OSwyMi44LDEwMi4wNSw1MSwxMDIuMDV6IE01MSwyMC4wNQ0KCQljMTcuMSwwLDMxLDEzLjksMzEsMzFjMCwxNy4xLTEzLjksMzEtMzEsMzFjLTE3LjEsMC0zMS0xMy45LTMxLTMxQzIwLDMzLjk1LDMzLjksMjAuMDUsNTEsMjAuMDV6Ii8+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                        <input type="text">
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="hero-text">
+                <p class="title">What will your verse be?</p>
+                <p class="sub-title">Everyone has something to share. See how people are using <br> iPad in their unique
+                    ways to add to the world's story.</p>
+                <a>Watch the "Your Verse" film and explore the stories <i></i></a>
+            </div>
+        </header>
+        <section>
+            <div class="ads">
+                <img class="ads-img" src="/src/img/5c.jpg" alt="">
+                <img class="ads-img" src="/src/img/5s.jpg" alt="">
+                <img class="ads-img" src="/src/img/30y.jpg" alt="">
+                <img class="ads-img" src="/src/img/5c.jpg" alt="">
+            </div>
+        </section>
+
+        <footer>
+            <div class="list-store">
+                <p class="store">Shop the <a class="store-sub" href="">Apple Online Store</a>(1-800-MY-APPLE), visit an
+                    <a class="store-sub" href="">Apple Retail Store</a> , or find a <a class="store-sub"
+                        href="">reseller.</a> </p>
+                <ul class="ul-list">
+                    <li class="list">Site Map</li>
+                    <li class="list">Hot News</li>
+                    <li class="list">RSS Feeds</li>
+                    <li class="list">Media Info</li>
+                    <li class="list">Environment</li>
+                    <li class="list">Job Opportunities</li>
+                    <li class="list">Contact Us</li>
+                    <li class="list">Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="small">
+                <p class="store">Copyright © 2014 Apple Inc. All rights reserved. <a class="store-sub" href="">Apple
+                        Retail Store </a> Terms of Use <a class="store-sub" href=""> Privacy Policy</a> </p>
+
+            </div>
+
+        </footer>
+    </div>
 </body>
+
 </html>

@@ -1,5 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;200;300;400;600;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans pro', sans-serif;
+}
+
+header {
+  background: url(/src/img/main_background.jpg) 50% 90%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 90vh;
+}
+
+nav ul {
+  border-radius: 3px;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  top: 50px;
+  left: 200px;
+  text-transform: capitalize;
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  list-style: none;
+  background: linear-gradient(#797979, #838383 48%, #666 50%, #888);
+  border: 1.5px solid #555;
+  width: 70%;
+  height: 35px;
+  text-align: center;
+}
+
+nav li {
+  font-size: 15px;
+  text-align: center;
+  padding-left: 0;
+  justify-content: center;
+  align-items: start;
+  border-left: 1.5px solid #555;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+}
+
+nav li .apple-icon {
+  position: relative;
+  top: 3px;
+  max-width: 23%;
+}
+
+#search-bar {
+  position: relative;
+}
+
+nav #search-bar img {
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  z-index: 1;
+  max-width: 15%;
+}
+
+nav #search-bar input {
+  position: relative;
+  top: 3px;
+  color: white;
+  left: 6px;
+  width: 130%;
+  height: 80%;
+  background: linear-gradient(#d1d0d0, #838383 48%, rgb(150, 148, 148) 50%, #888);
+  border-radius: 15px;
+}
+
+nav #search-bar input:hover {
+  position: relative;
+  color: white;
+  top: 3px;
+  left: 6px;
+  width: 130%;
+  height: 80%;
+  background: linear-gradient(#d1d0d0, #838383 48%, rgb(150, 148, 148) 50%, #888);
+  border-radius: 15px;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  color: white;
+  top: 70px;
+}
+
+.hero-text .title {
+  font-size: 80px;
+  word-spacing: 3px;
+  font-weight: 100;
+}
+
+.hero-text .sub-title {
+  font-size: 30px;
+  word-spacing: 3px;
+  font-weight: 300;
+}
+
+.hero-text a {
+  position: relative;
+  top: 20px;
+  font-size: 30px;
+  word-spacing: 3px;
+  font-weight: 300;
+}
+
+.ads {
+  margin-top: 3px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.ads-img {
+  max-width: 100%;
+}
+
+footer {
+  margin: 20px 0;
+}
+
+.list-store,
+.small {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 10px;
+  color: grey;
+}
+
+.small {
+  margin-top: 10px;
+}
+
+.ul-list {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+.list {
+  border-right: 1px solid grey;
+  padding-right: 5px;
+}
+
+.list,
+.store-sub {
+  color: dodgerblue;
 }
